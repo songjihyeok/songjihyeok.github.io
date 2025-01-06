@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>포켓몬 도감</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>포켓몬 도감</h1>
+  <div id="searchArea">
+    <input id="search" type="text" placeholder="포켓몬 이름을 입력하세요">
+    <button id="searchButton">검색</button>
+    <select id="typeFilter">
+      <option value="">모든 타입</option>
+      <option value="fire">불</option>
+      <option value="water">물</option>
+      <option value="grass">풀</option>
+      <option value="electric">전기</option>
+    </select>
+    <button id="filterButton">필터링</button>
+  </div>
+  <div id="result"></div>
+  <div id="favorites">
+    <h2>즐겨찾기</h2>
+    <ul id="favoritesList"></ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
